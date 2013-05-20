@@ -34,8 +34,8 @@ $this->breadcrumbs = array(
                     <?php echo $form->passwordField($model, 'password'); ?>
                     <?php echo $form->error($model, 'password'); ?>
                     <p class="hint">
-                            <?php echo LilyModule::t('In password you can use lowercase and uppercase latin letters, characters (excluding quotes) {passwordSymbols} and simple whitespace.
-        <br /> Password\'s length must be from 8 to 32 characters.', array('{passwordSymbols}' => '&quot;-.,;=+~/\[]{}!@#$%^*&amp;()_|&quot;')); ?>
+                            <?php echo LilyModule::t('In password you can use lowercase and uppercase latin letters, characters (excluding quotes) {passwordSymbols} and simple whitespace.', array('{passwordSymbols}' => '&quot;-.,;=+~/\[]{}!@#$%^*&amp;()_|&quot;')); ?><br />
+                            <?php echo LilyModule::t('Password\'s length must be from 8 to 32 characters.'); ?>
                         </p>
                 </div>
                 <div class="row">
